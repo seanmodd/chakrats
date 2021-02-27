@@ -9,7 +9,9 @@ import {
   Box,
 } from '@chakra-ui/react';
 import Container from '../components/Container';
+import Banner from '../components/Banner';
 import ListContainer from '../components/List';
+import Navbar from '../components/chakraPro/NavbarWithRightCta/Navbar';
 
 export default function Index() {
   const { colorMode } = useColorMode();
@@ -19,10 +21,12 @@ export default function Index() {
   };
   return (
     <div>
+      <Navbar />
       <Container>
         <Head>
           <title>Sean Modd motherfuckers</title>
         </Head>
+
         <Box
           bg="gray.200"
           h="100px"
