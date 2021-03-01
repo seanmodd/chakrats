@@ -1,6 +1,6 @@
 import React from 'react';
 import { useColorMode, Button, Flex, Box } from '@chakra-ui/react';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import styled from '@emotion/styled';
 
 import DarkModeSwitch from './DarkModeSwitch';
@@ -29,28 +29,31 @@ const Container = ({ children }) => {
     top: 0;
     backdrop-filter: saturate(180%) blur(20px);
     transition: height 0.5s, line-height 0.5s;
+    background-color: ${bgColor[colorMode]};
+    width: 100%;
+    min-width: 356px;
+    max-width: 800px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 8;
+    margin-left: auto;
+    margin-right: auto;
   `;
 
   return (
     <div className="SEANDIV">
       <StickyNav
         className="SEANNAV"
-        flexDirection="row"
-        justifyContent="space-between"
-        alignItems="center"
-        maxWidth="800px"
-        minWidth="356px"
-        width="100%"
-        bg={bgColor[colorMode]}
         as="nav"
         px={[2, 6, 6]}
         // py={2}
-        mt={8}
+
         mb={[0, 0, 8]}
         mx="auto"
       >
         <Box className="SEANBOX">
-          <NextLink href="/" passHref>
+          <Link href="/" passHref>
             <Button
               as="a"
               variant="ghost"
@@ -59,8 +62,8 @@ const Container = ({ children }) => {
             >
               Home
             </Button>
-          </NextLink>
-          <NextLink href="/blog" passHref>
+          </Link>
+          <Link href="/blog" passHref>
             <Button
               as="a"
               variant="ghost"
@@ -69,8 +72,8 @@ const Container = ({ children }) => {
             >
               Blog
             </Button>
-          </NextLink>
-          <NextLink href="/sean" passHref>
+          </Link>
+          <Link href="/sean" passHref>
             <Button
               as="a"
               variant="ghost"
@@ -79,7 +82,7 @@ const Container = ({ children }) => {
             >
               Sean
             </Button>
-          </NextLink>
+          </Link>
         </Box>
 
         <DarkModeSwitch />
@@ -116,6 +119,7 @@ const Container = ({ children }) => {
         </FormControl>
         <IconButton aria-label="icon" icon="copy" /> */}
       </Flex>
+      ;
     </div>
   );
 };

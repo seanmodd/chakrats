@@ -36,6 +36,7 @@
     "remark-capitalize": "^1.1.0",
     "remark-code-titles": "^0.1.1",
     "remark-slug": "^6.0.0",
+    "styled-components": "^5.2.1",
     "ts-lint": "^4.5.1",
     "tslint-react": "^5.0.0"
   },

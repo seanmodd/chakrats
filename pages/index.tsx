@@ -20,7 +20,7 @@ export default function Index() {
     light: 'gray.700',
     dark: 'gray.400',
   };
-  n
+
   return (
     <div>
       <Navbar />

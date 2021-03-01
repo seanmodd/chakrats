@@ -1,0 +1,74 @@
+[
+    {
+        "type": "Group",
+        "name": "favComponents",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "u3piLl1wItyRcEMJ",
+        "iconColor": "rgb(255, 0, 255)"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/chakrats/components/Container.tsx",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/components/Container.tsx",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "JPoucRyUStxdWTbM"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/chakrats/components/List.tsx",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/components/List.tsx",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "udc6F9OqHQIkhwR2"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/chakrats/components/chakraPro/NavbarWithRightCta",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/components/chakraPro/NavbarWithRightCta",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "RQmIrNCZ4wexYhAu"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/chakrats/components/chakraPro/HeroWithFeaturedLogos",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/components/chakraPro/HeroWithFeaturedLogos",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "DQ3RzbZqJClWSHh1"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/chakrats/components/DarkModeSwitch.tsx",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/components/DarkModeSwitch.tsx",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "rv6nZ4XBGuoSaO9J"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/chakrats/pages",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/pages",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "j8UDYoLy9u3gBEbA"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/chakrats/learningTS",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/learningTS",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "saA0OneG6QI8DM3g"
+    }
+]
