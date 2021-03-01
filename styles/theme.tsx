@@ -11,7 +11,7 @@ const breakpoints = createBreakpoints({
   sm: '40em',
   md: '52em',
   lg: '64em',
-  lg: '62em',
+  xl: '62em',
 });
 const fontWeights = {
   normal: 300,
