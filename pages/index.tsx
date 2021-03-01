@@ -9,12 +9,11 @@ import {
   Box,
 } from '@chakra-ui/react';
 import Container from '../components/Container';
-
+import PersonalForm from '../components/PersonalForm';
 import ListContainer from '../components/List';
-import Navbar from '../components/chakraPro/NavbarWithRightCta/Navbar';
 import Hero from '../components/chakraPro/HeroWithFeaturedLogos/Hero';
 
-export default function Index() {
+const index = () => {
   const { colorMode } = useColorMode();
   const colorSecondary = {
     light: 'gray.700',
@@ -23,19 +22,11 @@ export default function Index() {
 
   return (
     <div>
-      <Navbar />
       <Container>
         <Head>
           <title>Sean Modd motherfuckers</title>
         </Head>
-        <Hero />
-        <Box
-          bg="gray.200"
-          h="100px"
-          w="100px"
-          rounded="lg"
-          className="SEANBOXmadeinINDEX"
-        />
+
         <Stack
           as="main"
           spacing={8}
@@ -53,12 +44,15 @@ export default function Index() {
           >
             <Heading mb={2}>Hi, I'm Sean Modd you bastards.</Heading>
             <ListContainer />
+            <PersonalForm />
             <Text color={colorSecondary[colorMode]} mt={4}>
               All the Lorem Ipsum shit goes right here...
             </Text>
           </Flex>
         </Stack>
+        <Hero />
       </Container>
     </div>
   );
-}
+};
+export default index;

@@ -1,0 +1,142 @@
+[
+  {
+    "_id": "603d6ac2a28ad5a963ac32b1",
+    "name": "The Delivery Driver Monthly Access Pass",
+    "slug": "the-delivery-driver-monthly-access-pass",
+    "content": "The complete delivery driver monthly access pass, available now! ",
+    "meta_description": "The complete delivery driver monthly access pass, limited time availability!",
+    "meta_title": "The complete delivery driver monthly access pass",
+    "price": 21.99,
+    "published_at": "2021-03-01T22:29:33.717Z",
+    "createdAt": "2021-03-01T22:29:22.480Z",
+    "updatedAt": "2021-03-01T22:29:33.884Z",
+    "__v": 0,
+    "image": {
+      "_id": "603d6a81a28ad5a963ac32b0",
+      "name": "deliverydriver.jpeg",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "deliverydriver_8b716cf77c",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 23.15,
+      "width": 555,
+      "height": 417,
+      "url": "/uploads/deliverydriver_8b716cf77c.jpeg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_deliverydriver.jpeg",
+          "hash": "thumbnail_deliverydriver_8b716cf77c",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 208,
+          "height": 156,
+          "size": 6.29,
+          "path": null,
+          "url": "/uploads/thumbnail_deliverydriver_8b716cf77c.jpeg"
+        },
+        "small": {
+          "name": "small_deliverydriver.jpeg",
+          "hash": "small_deliverydriver_8b716cf77c",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 376,
+          "size": 19.87,
+          "path": null,
+          "url": "/uploads/small_deliverydriver_8b716cf77c.jpeg"
+        }
+      },
+      "provider": "local",
+      "related": [
+        "603d6ac2a28ad5a963ac32b1"
+      ],
+      "createdAt": "2021-03-01T22:28:17.003Z",
+      "updatedAt": "2021-03-01T22:29:22.608Z",
+      "__v": 0,
+      "id": "603d6a81a28ad5a963ac32b0"
+    },
+    "id": "603d6ac2a28ad5a963ac32b1"
+  },
+  {
+    "_id": "603d6b47a28ad5a963ac32b4",
+    "name": "The Sales Dashboard Access Pass",
+    "slug": "the-sales-dashboard-access-pass",
+    "content": "This dashboard access pass is available for a limited time only!",
+    "meta_description": "The dashboard access pass for sales teams!",
+    "meta_title": "The Dashboard Access Pass",
+    "price": 49.99,
+    "published_at": "2021-03-01T22:31:38.731Z",
+    "createdAt": "2021-03-01T22:31:35.741Z",
+    "updatedAt": "2021-03-01T22:31:38.909Z",
+    "__v": 0,
+    "image": {
+      "_id": "603d6b13a28ad5a963ac32b3",
+      "name": "local-delivery-business.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "local_delivery_business_a59dd75b17",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 216.01,
+      "width": 1848,
+      "height": 970,
+      "url": "/uploads/local_delivery_business_a59dd75b17.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_local-delivery-business.jpg",
+          "hash": "thumbnail_local_delivery_business_a59dd75b17",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 245,
+          "height": 129,
+          "size": 7.66,
+          "path": null,
+          "url": "/uploads/thumbnail_local_delivery_business_a59dd75b17.jpg"
+        },
+        "large": {
+          "name": "large_local-delivery-business.jpg",
+          "hash": "large_local_delivery_business_a59dd75b17",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 1000,
+          "height": 525,
+          "size": 60.24,
+          "path": null,
+          "url": "/uploads/large_local_delivery_business_a59dd75b17.jpg"
+        },
+        "medium": {
+          "name": "medium_local-delivery-business.jpg",
+          "hash": "medium_local_delivery_business_a59dd75b17",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 750,
+          "height": 394,
+          "size": 37.01,
+          "path": null,
+          "url": "/uploads/medium_local_delivery_business_a59dd75b17.jpg"
+        },
+        "small": {
+          "name": "small_local-delivery-business.jpg",
+          "hash": "small_local_delivery_business_a59dd75b17",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 262,
+          "size": 20.27,
+          "path": null,
+          "url": "/uploads/small_local_delivery_business_a59dd75b17.jpg"
+        }
+      },
+      "provider": "local",
+      "related": [
+        "603d6b47a28ad5a963ac32b4"
+      ],
+      "createdAt": "2021-03-01T22:30:43.555Z",
+      "updatedAt": "2021-03-01T22:31:35.813Z",
+      "__v": 0,
+      "id": "603d6b13a28ad5a963ac32b3"
+    },
+    "id": "603d6b47a28ad5a963ac32b4"
+  }
+]
