@@ -70,5 +70,32 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "saA0OneG6QI8DM3g"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/chakrats/styles",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/styles",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "mkWYU0JoxgptfaVv"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/chakrats/utils",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/utils",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "F4x6C8oaPORimlSj"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/chakrats/components",
+        "parent_id": "u3piLl1wItyRcEMJ",
+        "fsPath": "/Users/seanmodd/Development/2021/chakrats/components",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "6Au2fEczMWvC0tGO"
     }
 ]

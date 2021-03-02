@@ -1,65 +1,77 @@
 import Head from 'next/head';
-import {
-  useColorMode,
-  Heading,
-  Text,
-  Flex,
-  Stack,
-  Accordion,
-  Box,
-} from '@chakra-ui/react';
+import { useColorMode, Heading, Text, Flex, Stack } from '@chakra-ui/react';
+import Link from 'next/link';
 import Container from '../components/Container';
 import PersonalForm from '../components/PersonalForm';
 import PersonalList from '../components/PersonalList';
 import Hero from '../components/chakraPro/HeroWithFeaturedLogos/Hero';
-import PersonalProducts from '../components/PersonalProducts';
 import PersonalBox from '../components/PersonalBox';
+import styles from '../styles/Home.module.css';
 
-const index = () => {
-  const { colorMode } = useColorMode();
-  const colorSecondary = {
-    light: 'gray.700',
-    dark: 'gray.400',
-  };
+import { fromImageToUrl, API_URL } from '../utils/urls';
+import { twoDecimals } from '../utils/format';
 
-  return (
-    <div>
-      <Container>
-        <Head>
-          <title>Sean Modd motherfuckers</title>
-        </Head>
+const index = ({ products }) => (
+  <div>
+    <Container>
+      <Head>
+        <title>Sean Modd motherfuckers</title>
+      </Head>
 
-        <Stack
-          as="main"
-          spacing={8}
-          justifyContent="center"
+      <Stack
+        as="main"
+        spacing={8}
+        justifyContent="center"
+        alignItems="flex-start"
+        m="0 auto 4rem auto"
+        maxWidth="700px"
+        px={2}
+      >
+        <Flex
+          justifyContent="flex-start"
+          flexDirection="column"
           alignItems="flex-start"
-          m="0 auto 4rem auto"
           maxWidth="700px"
-          px={2}
         >
-          <Flex
-            justifyContent="flex-start"
-            flexDirection="column"
-            alignItems="flex-start"
-            maxWidth="700px"
-          >
-            <Heading mb={2}>Hi, I'm Sean Modd you bastards.</Heading>
-            <PersonalList />
+          <Heading mb={5}>Hi, I'm Sean Modd you bastards.</Heading>
+          <PersonalList />
 
-            <PersonalForm />
-            <PersonalBox>
-              <Text color={colorSecondary[colorMode]} mt={4}>
-                All the Lorem Ipsum shit goes right here...
-                <PersonalProducts />
-              </Text>
-            </PersonalBox>
-          </Flex>
-        </Stack>
-        <Hero />
-      </Container>
-    </div>
-  );
-};
+          <PersonalForm />
+          <PersonalBox>
+            <ul>
+              {products.map((product) => (
+                <div className={styles.product}>
+                  <Link href={`/products/${product.slug}`}>
+                    <a>
+                      <div className={styles.product__Rows}>
+                        <div className={styles.product__ColImg}>
+                          <img src={fromImageToUrl(product.image)} />
+                        </div>
+                        <div className={styles.product__Col}>
+                          {product.name} ${twoDecimals(product.price)}
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+              ))}
+            </ul>
+          </PersonalBox>
+        </Flex>
+      </Stack>
+      <Hero />
+    </Container>
+  </div>
+);
 export default index;
 
+export async function getStaticProps() {
+  const product_res = await fetch(`${API_URL}/products/`);
+  const products = await product_res.json();
+
+  return {
+    props: {
+      products,
+    },
+  };
+}
