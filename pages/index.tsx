@@ -10,8 +10,10 @@ import {
 } from '@chakra-ui/react';
 import Container from '../components/Container';
 import PersonalForm from '../components/PersonalForm';
-import ListContainer from '../components/List';
+import PersonalList from '../components/PersonalList';
 import Hero from '../components/chakraPro/HeroWithFeaturedLogos/Hero';
+import PersonalProducts from '../components/PersonalProducts';
+import PersonalBox from '../components/PersonalBox';
 
 const index = () => {
   const { colorMode } = useColorMode();
@@ -43,11 +45,15 @@ const index = () => {
             maxWidth="700px"
           >
             <Heading mb={2}>Hi, I'm Sean Modd you bastards.</Heading>
-            <ListContainer />
+            <PersonalList />
+
             <PersonalForm />
-            <Text color={colorSecondary[colorMode]} mt={4}>
-              All the Lorem Ipsum shit goes right here...
-            </Text>
+            <PersonalBox alignItems="center" align="center" >
+              <Text color={colorSecondary[colorMode]} mt={4}>
+                All the Lorem Ipsum shit goes right here...
+                <PersonalProducts />
+              </Text>
+            </PersonalBox>
           </Flex>
         </Stack>
         <Hero />

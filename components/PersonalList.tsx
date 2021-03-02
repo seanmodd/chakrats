@@ -1,3 +1,5 @@
+
+
 const List = ({ items }) => (
   <ul>
     {items.map((item) => (
@@ -6,6 +8,6 @@ const List = ({ items }) => (
   </ul>
 );
 
-const ListContainer = () => <List items={['Learn React', 'Learn Next.js']} />;
+const PersonalList = () => <List items={['Learn React', 'Learn Next.js']} />;
 
-export default ListContainer;
+export default PersonalList;
