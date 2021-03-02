@@ -1,7 +1,10 @@
 import { useColorMode, Button, Box, Flex } from '@chakra-ui/react';
 import Link from 'next/link';
 import styled from '@emotion/styled';
+import { useContext } from 'react';
 import DarkModeSwitch from './DarkModeSwitch';
+import AuthContext from '../context/AuthContext';
+import styles from '../styles/Header.module.css';
 
 const PersonalNav = () => {
   const { colorMode } = useColorMode();
@@ -33,6 +36,7 @@ const PersonalNav = () => {
     margin-left: auto;
     margin-right: auto;
   `;
+  const { user } = useContext(AuthContext);
   return (
     <>
       <StickyNav className="SEANNAV" as="nav" px={[10, 10, 10]} pt={10} mx={10}>
@@ -68,6 +72,19 @@ const PersonalNav = () => {
             </Button>
           </Link>
         </Box>
+        <div className={styles.auth}>
+          {user ? (
+            <Link href="/account">
+              <a>
+                <img src="/user_avatar.png" alt={user.email} />
+              </a>
+            </Link>
+          ) : (
+            <Link href="/login">
+              <a>Log In</a>
+            </Link>
+          )}
+        </div>
 
         <DarkModeSwitch />
       </StickyNav>
