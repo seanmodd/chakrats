@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import products from '../products.json';
 import styles from '../styles/Home.module.css';
-import { fromImageToUrl, API_URL } from '../utils/urls';
+import { fromImageToUrl } from '../utils/urls';
 import { twoDecimals } from '../utils/format';
 
 const Catalog = ({ products }) => (

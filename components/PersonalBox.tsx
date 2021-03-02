@@ -17,7 +17,7 @@ const PersonalBox = ({ children }) => {
     <Box
       py="100px"
       _hover={{ backgroundColor: navHoverBg[colorMode] }}
-      bg="gray.50"
+      // bg="gray.50"
       bg="{bgColorBox[colorMode]}"
       color={color[colorMode]}
       h="auto"

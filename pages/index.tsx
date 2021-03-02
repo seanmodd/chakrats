@@ -48,7 +48,7 @@ const index = () => {
             <PersonalList />
 
             <PersonalForm />
-            <PersonalBox alignItems="center" align="center" >
+            <PersonalBox>
               <Text color={colorSecondary[colorMode]} mt={4}>
                 All the Lorem Ipsum shit goes right here...
                 <PersonalProducts />
