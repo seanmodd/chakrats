@@ -23,6 +23,7 @@ const PersonalBox = ({ children }) => {
       h="auto"
       w="auto"
       rounded="lg"
+      alignItems="center"
       className="BoxinsideContainer"
     >
       {' '}

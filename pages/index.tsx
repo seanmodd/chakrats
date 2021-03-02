@@ -27,15 +27,16 @@ const index = ({ products }) => (
         maxWidth="700px"
         px={2}
       >
+        {' '}
+        <Heading fontWeight={400}>
+          Hi, this is the Modd Squad you bastards.
+        </Heading>
         <Flex
           justifyContent="flex-start"
           flexDirection="column"
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={5}>Hi, I'm Sean Modd you bastards.</Heading>
-          <PersonalList />
-
           <PersonalForm />
           <PersonalBox>
             <ul>

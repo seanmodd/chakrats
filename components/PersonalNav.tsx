@@ -76,7 +76,7 @@ const PersonalNav = () => {
           {user ? (
             <Link href="/account">
               <a>
-                <img src="/user_avatar.png" alt={user.email} />
+                <img src="/user_avatar1.png" alt={user.email} />
               </a>
             </Link>
           ) : (

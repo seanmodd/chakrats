@@ -5,21 +5,30 @@ import {
   Input,
   Textarea,
   IconButton,
+  Box,
+  Stack,
+  Accordion,
+  Flex,
 } from '@chakra-ui/react';
+import { PhoneIcon, EmailIcon, ArrowRightIcon } from '@chakra-ui/icons';
 
 const PersonalForm = () => (
   <>
-    <FormControl className="SEANFORM" maxWidth="500px">
-      <FormLabel>Label</FormLabel>
-      <Input />
-      <Textarea mt={2} backgroundColor="cyan.50" />
-    </FormControl>
-    <IconButton
-      aria-label="submit"
-      bg="cyan.100"
-      // icon="copy"
-      placeholder="click"
-    />
+    <Stack width="100%" alignItems="center">
+      <FormControl className="SEANFORM" maxWidth="500px">
+        <FormLabel textAlign="center" fontWeight="normal" fontSize={30}>
+          Say yo!
+        </FormLabel>
+
+        <Textarea mt={2} backgroundColor="cyan.50" />
+      </FormControl>
+      <IconButton
+        variant="solid"
+        colorScheme="twitter"
+        aria-label="Send email"
+        icon={<ArrowRightIcon />}
+      />
+    </Stack>
   </>
 );
 
