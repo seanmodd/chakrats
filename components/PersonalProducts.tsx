@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import products from '../products.json';
 import styles from '../styles/Home.module.css';
-import { fromImageToUrl } from '../utils/urls';
+import { fromImageToUrl, API_URL } from '../utils/urls';
 import { twoDecimals } from '../utils/format';
 
 const Catalog = ({ products }) => (
@@ -28,7 +28,16 @@ const Catalog = ({ products }) => (
     ))}
   </ul>
 );
-
 const PersonalProducts = () => <Catalog products={products} />;
-
 export default PersonalProducts;
+
+export async function getStaticProps() {
+  const product_res = await fetch(`${API_URL}/products/`);
+  const products = await product_res.json();
+
+  return {
+    props: {
+      products,
+    },
+  };
+}
