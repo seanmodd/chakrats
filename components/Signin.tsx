@@ -5,8 +5,6 @@ import { ArrowRightIcon } from '@chakra-ui/icons';
 import AuthContext from '../context/AuthContext';
 import styles from '../styles/Login.module.css';
 import Container from '../components/Container';
-
-import Hero from '../components/chakraPro/HeroWithFeaturedLogos/Hero';
 import PersonalBox from '../components/PersonalBox';
 
 export default function Signin() {
